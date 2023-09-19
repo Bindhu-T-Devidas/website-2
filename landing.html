@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleleng.css">
+<style>
+ /*NAV BAR*/
+ nav {
+     background-color: rgb(222, 111, 0);
+      overflow: hidden;
+      padding-left: 70%;
+      padding-bottom: 10px;
+      
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a:hover{
+     color: rgb(238, 238, 243);
+     background-color: black;
+    }
+
+    nav a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    /* END OF NAV BAR */
+
+
+     /* SECTIONION THE PAGE*/
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-section {
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .right-section {
+      flex: 1;
+      background-color: #fea6a6;
+      padding: 20px;
+    }
+
+    .box {
+      border: 2px solid rgb(255, 183, 183);
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: rgb(245, 220, 208);
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    /*END OF SECTIONION THE PAGE*/
+
+
+    /* FORM */
+    .radio-group label,
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.checkbox-group label:last-child {
+    margin-right: 0;
+}
+/* VIDEO MEASUREMENTS*/
+iframe {
+      width: 540px; /* Set the desired width */
+      height: 260px; /* Set the desired height */
+    }
+
+    footer {
+      background-color: #f6808e;
+      padding: 10px;
+      text-align: center;
+    }
+    
+ 
+
+    
+
+</style>
+</head>
+<body>
+  <header> 
+    <img src="https://img.freepik.com/free-vector/doodles-background-bakery_125540-632.jpg?w=2000" alt="Girl in a jacket" width="190" height="90" sytle ="float:left">
+   
+    <p style=" text-align: left; font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin: 10px; float: right;">
+        yummy in my tummy   </p>
+
+
+   
+</header>
+<!-- NAVIGATION BAR-->
+<nav>
+  <ul>
+    <!-- Navigation Bar / Menu Bar -->
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<marquee direction="100%" direction="right" behaviour="alternate" style="background-color: beige;"> yummy in my tummy </marquee>
+
+<!--BODY CONTENT -->
+<div class="container">
+  <div class="left-section">
+    <div class="box">
+      <p>A bakery is a delightful place where the aroma of freshly baked goods fills the air, captivating our senses and stirring our appetites.
+        <br> It is a haven for pastry lovers, offering a tempting array of sweet and savory treats. From fluffy croissants and buttery danishes to 
+        <br>delectable cakes and mouthwatering pies, a bakery caters to a diverse range of cravings
+      </p>
+    </div>
+    <div class="box">
+     
+        <!--VIDEO FROM YOUTUBE -->
+        <iframe  src="https://www.youtube.com/embed/ad5_MXzibSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+
+    <!--AUDIO FROM LOCAL -->
+    <div class="box">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+    </div>
+    <div class="box">
+       <p>HELLO </p>
+      </div>
+  </div>
+  <div class="right-section">
+   
+        <form> <!-- FORM CONTENTS -->
+            <form id="orderForm">
+
+              <!-- NAME TEXT BOX -->
+                <h1>Order Form</h1>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- DROPDOWN-->
+            
+                <div class="form-group">
+                    <label for="item">Item Number:</label>
+                    <select id="item" name="item">
+                        <option value="1">Item 1</option>
+                        <option value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                    </select>
+                </div>
+            
+
+                <!-- NUMBER BOX-->
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+
+                <!-- RADIO BUTTON -->
+            
+                <div class="form-group">
+                    <label for="dietary">Dietary Preference:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="dietary" value="vegetarian"> Vegetarian
+                        </label>
+                        <label>
+                            <input type="radio" name="dietary" value="non-vegetarian"> Non-Vegetarian
+                        </label>
+                    </div>
+                </div>
+
+                <!--CHECK BOX-->
+            
+                <div class="form-group">
+                    <label>Allergies:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="allergy" value="lactose"> Lactose
+                        </label>
+                        <label>
+                            <input type="checkbox" name="allergy" value="nuts"> Nuts
+                        </label>
+                        <label>
+                            <input type="checkbox" name="allergy" value="gluten"> Gluten
+                        </label>
+                    </div>
+                </div>
+
+                <!--BUTTON-->
+            
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+            <!--INNER HTML-->
+            <p id="message"></p>
+            <!--IMPORTING EXTERNAL JS -->
+            <script src="script1.js"></script>
+            
+        
+    
+  </div>
+</div>
+
+
+<footer>
+    <!-- Footer Content -->
+
+    <p style=" text-align: left;">Credits: Sources used to create this web page</p>
+  </footer>
+
+</body>
+</html>
+
+
